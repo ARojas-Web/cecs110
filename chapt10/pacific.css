@@ -178,13 +178,3 @@ text-area{
 input[type=submit]{
     margin-left: 130px;
 }
-
-@media(max-width:37.5em){
-    label{
-        float: none;
-        text-align: left;
-    }
-    input[type=submit]{
-        margin-left: 0;
-    }
-}
