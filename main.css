@@ -1,0 +1,84 @@
+body{
+    background-image: url('navy-blue-background.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header, footer{
+    font-family: 'Maven Pro', sans-serif;
+}
+header{
+    background: black;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+#header-img{
+    overflow: hidden;
+    background-image: url('labindexlogo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-height: 10em;
+}
+#header-img h1{
+    text-indent: -1000em;
+}
+
+nav, main{
+    font-family: 'Yatra One', cursive;
+}
+nav{
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;
+    background-color: rgb(49, 49, 49);
+    margin: 0;
+    padding: 0.5em 0;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+nav li{
+    display: inline;
+    float: none;
+}
+nav li a{
+    padding: 0.5em 1em;
+    text-decoration: none;
+    display: inline;
+    text-align: center; 
+    color: whitesmoke;
+}
+nav li a:hover{
+    background-color: rgb(163, 199, 241);
+    color: navy;
+}
+nav a:visited{
+    color: white;
+    text-decoration: none;
+}
+#wrapper{
+    width: 80%;
+    margin: auto;
+    background-color: cornflowerblue;
+    border-radius: 1em;
+    box-shadow: 0 0 10px white;
+}
+main{
+    padding: 1em 2em;
+    color: whitesmoke;
+    background: linear-gradient(to bottom, #112063, #325979) !important;
+    margin-bottom: 0;
+}
+footer{
+    text-align: center;
+    background-color: rgb(49, 49, 49);
+    color: antiquewhite;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    margin: 0;
+    padding: 1em 0;
+}
