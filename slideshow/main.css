@@ -1,0 +1,248 @@
+body{
+    background-image: url('watercolorbg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+header, footer{
+    font-family: 'Maven Pro', sans-serif;
+}
+header{
+    background-color: rgba(0,0,0,0.6);
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+#header-img{
+    overflow: hidden;
+    background-image: url('logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-height: 10em;
+    -webkit-animation-name: fadeInDown;
+    -webkit-animation-duration: 2s;
+    animation-name: fadeInDown;
+    animation-duration: 2s;
+    position: relative;
+}
+#header-img h1{
+    text-indent: -1000em;
+}
+h1{
+    font-size: 5em;
+    margin: 0;
+}
+h2{
+    font-size: 3em;
+    margin: 0;
+}
+h3{
+    font-size: 1.5em;
+    margin: 0;
+}
+nav, main{
+    font-family: 'Yatra One', cursive;
+}
+nav{
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;
+    background-color: rgb(49, 49, 49);
+    margin: 0;
+    padding: 0.5em 0;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+nav li{
+    display: inline;
+    float: none;
+}
+nav li a{
+    padding: 0.5em 1em;
+    text-decoration: none;
+    display: inline;
+    text-align: center; 
+    color: whitesmoke;
+}
+nav li a:hover{
+    background-color: rgb(163, 199, 241);
+    color: navy;
+}
+nav a:visited{
+    color: white;
+    text-decoration: none;
+}
+#wrapper{
+    width: 80%;
+    margin: auto;
+    border-radius: 1em;
+    box-shadow: 0 0 15px white;
+    position: relative;
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+}
+main{
+    padding: 1em 2em;
+    color: whitesmoke;
+    background: linear-gradient(to bottom, #112063, #325979) !important;
+    margin-bottom: 0;
+}
+footer{
+    text-align: center;
+    background-color: rgb(49, 49, 49);
+    color: antiquewhite;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    margin: 0;
+    padding: 1em 0;
+}
+@-webkit-keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        top: 0px;
+        opacity: 1;
+    }
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInDown{
+    0%{
+        bottom: 5em;
+        opacity: 0;
+    }
+    100%{
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown{
+    0%{
+        bottom: 5em;
+        opacity: 0;
+    }
+    100%{
+        bottom: 0;
+        opacity: 1;
+    }
+}
+#batfamily-btn-section{
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+#lantern-btn-section{
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.batfamily-btn{
+    padding: 0.5em 1.5em;
+    color: #E2E7FF;
+    text-decoration: none;
+    background: linear-gradient(to bottom, #000000, #393939);
+}
+.batfamily-btn:hover{
+    background: linear-gradient(to bottom, #393939, #474747);
+}
+.batfamily-btn:active{
+    background: linear-gradient(to bottom, #393939, #474747);
+}
+.btn-family:visited{
+    color: #E2E7FF;
+}
+.lantern-btn{
+    padding: 0.5em 1.5em;
+    background: linear-gradient(to bottom, #0E7000, #0F8902);
+    color: azure;
+    text-decoration: none;
+}
+.lantern-btn:active{
+    background: linear-gradient(to bottom, #13AE02, #17D102);
+}
+.lantern-btn:hover{
+    background: linear-gradient(to bottom, #13AE02, #17D102);
+}
+.lantern-btn:visited{
+    color: azure;
+}
+
+@media only screen and (max-width: 768px){
+    body{
+        height: 100vh;
+        margin: 0;
+    }
+    #wrapper{
+        width: 100%;
+        margin: auto;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    header{
+        border-radius: 0;
+    }
+    footer{
+        border-radius: 0;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    html{
+        height: 100vh;
+        background-image: url('watercolorbg.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        /*background-size: cover;*/
+    }
+    body{
+        background: none;
+        margin: 0;
+    }
+    nav ul{
+        background: rgba(0,0,0,0.2);
+    }
+    nav li{
+        background-color: rgb(49, 49, 49);
+        display: block;
+        margin: 0.5em;
+        padding: 0.5em 0;
+        border: 2px solid black;
+    }
+    #wrapper{
+        min-width:  0;
+        width: 100%;
+        padding: 0;
+        box-shadow: none;
+        top: 0;
+        border-radius: 0;
+        margin: 0;
+    }
+    footer{
+        border-radius: 0;
+    }
+    header{
+        border-radius: 0;
+        margin-top: 0 !important;
+    }
+    footer{
+        margin-bottom: 1px;
+    }
+}
